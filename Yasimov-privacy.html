@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasimov - Gizlilik Politikası | Privacy Policy</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #030712;
+      --card-bg: rgba(17, 24, 39, 0.85);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --accent-purple: #8b5cf6;
+      --accent-cyan: #06b6d4;
+      --accent-green: #10b981;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-dim: #6b7280;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 32px 16px;
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(139, 92, 246, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.08) 0%, transparent 45%);
+      background-attachment: fixed;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    .header-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(12px);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+    .header-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+    }
+    .app-brand { display: flex; align-items: center; gap: 14px; }
+    .app-logo {
+      width: 48px; height: 48px; border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15); object-fit: cover;
+    }
+    .app-title-group h1 {
+      font-size: 26px; font-weight: 800; letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ffffff 40%, var(--accent-purple) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .app-subtitle { color: var(--text-muted); font-size: 14px; }
+    .meta-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 14px; border-radius: 9999px;
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      color: #c4b5fd; font-size: 12px; font-weight: 600; width: fit-content;
+    }
+    .language-nav { display: flex; gap: 12px; margin-bottom: 24px; }
+    .lang-btn {
+      flex: 1; padding: 12px 18px; background: var(--card-bg);
+      border: 1px solid var(--border-color); border-radius: 12px;
+      color: var(--text-main); text-decoration: none; font-weight: 600;
+      font-size: 14px; text-align: center; transition: all 0.2s ease;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .lang-btn:hover, .lang-btn.active {
+      background: rgba(139, 92, 246, 0.15);
+      border-color: var(--accent-purple); color: #ffffff;
+    }
+    .content-section {
+      background: var(--card-bg); border: 1px solid var(--border-color);
+      border-radius: 18px; padding: 28px; margin-bottom: 20px;
+      backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    }
+    h2 {
+      font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 14px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    h2::before {
+      content: ''; display: inline-block; width: 8px; height: 18px;
+      background: var(--accent-purple); border-radius: 4px;
+    }
+    h3 { font-size: 16px; font-weight: 600; color: var(--accent-cyan); margin: 18px 0 8px 0; }
+    p { color: var(--text-muted); font-size: 14.5px; margin-bottom: 12px; }
+    ul { margin: 10px 0 16px 22px; color: var(--text-muted); font-size: 14.5px; }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text-main); }
+    .highlight-box {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 12px; padding: 16px 18px; margin: 16px 0;
+    }
+    .highlight-box p { margin-bottom: 0; color: #a7f3d0; font-size: 14px; }
+    .alert-box {
+      background: rgba(139, 92, 246, 0.08);
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px; padding: 16px 18px; margin: 16px 0;
+    }
+    .alert-box p { margin-bottom: 0; color: #ddd6fe; font-size: 14px; }
+    a { color: var(--accent-cyan); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: #67e8f9; }
+    .footer { text-align: center; padding: 24px; color: var(--text-dim); font-size: 13px; }
+    .divider { height: 1px; background: var(--border-color); margin: 32px 0; }
+    @media (max-width: 640px) {
+      body { padding: 16px 10px; }
+      .header-card, .content-section { padding: 20px 16px; }
+      .app-title-group h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-card">
+      <div class="app-brand">
+        <img src="icon-512.png" alt="Yasimov Logo" class="app-logo" onerror="this.style.display='none'">
+        <div class="app-title-group">
+          <h1>Yasimov: Satranç & Gambit Ustası</h1>
+          <div class="app-subtitle">Gizlilik Politikası / Privacy Policy</div>
+        </div>
+      </div>
+      <div class="meta-badge">
+        <span>🛡️ Son Güncelleme: 16 Eylül 2026</span>
+      </div>
+    </div>
+
+    <div class="language-nav">
+      <a href="#turkish" class="lang-btn active">🇹🇷 Türkçe Metin</a>
+      <a href="#english" class="lang-btn">🇬🇧 English Version</a>
+    </div>
+
+    <!-- TURKISH SECTION -->
+    <div id="turkish">
+      <div class="content-section">
+        <h2>1. Genel Bakış ve Taahhüdümüz</h2>
+        <p>
+          <strong>Yasimov</strong> ("Uygulama", "biz", "bize" veya "bizim"), kullanıcıların gizliliğine ve kişisel verilerinin korunmasına en üst düzeyde önem vermektedir.
+          Bu Gizlilik Politikası; Yasimov mobil uygulamasını Android ve diğer platformlarda kullanırken hangi verilerin işlendiğini, verilerinizin nasıl saklandığını, üçüncü taraf servislerin rolünü ve yasal haklarınızı (KVKK ve GDPR) şeffaf bir şekilde açıklamak üzere hazırlanmıştır.
+        </p>
+        <div class="highlight-box">
+          <p>
+            <strong>Özetle:</strong> Yasimov, kullanıcılardan ad, soyad, e-posta, telefon numarası veya kesin konum gibi kişisel kimlik bilgilerini <u>asla toplamaz</u> ve kendi sunucularında <u>depolamaz</u>. Uygulama zorunlu hesap açma şartı olmadan, cihaz odaklı (local-first) bağımsız mimariyle çalışır.
+          </p>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h2>2. Cihaz İçi Veri Depolama (Yerel Mimari)</h2>
+        <p>
+          Yasimov'un sunduğu satranç gambiti eğitimleri, taktik bilmeceler ve usta maçı analizleri kullanıcı deneyimini kesintisiz kılmak amacıyla yerel olarak çalıştırılır:
+        </p>
+        <ul>
+          <li><strong>Oyun ve Taktik İlerlemesi:</strong> Çözdüğünüz bulmaca sayıları, incelediğiniz gambitler ve başarı rozetleriniz yalnızca cihazınızın kendi korumalı yerel deposunda (<code>localStorage</code>) saklanır.</li>
+          <li><strong>Kullanıcı Tercihleri:</strong> Tahta görünümü, ses efektleri açık/kapalı durumu ve seçtiğiniz oyun zorluk seviyesi cihazınızda yerel olarak tutulur.</li>
+          <li><strong>Veri Silme:</strong> Uygulamayı cihazınızdan kaldırdığınızda veya cihazınızın uygulama ayarlarından "Verileri Temizle" seçeneğini kullandığınızda tüm kayıtlarınız anında ve kalıcı olarak cihazınızdan silinir.</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h2>3. Üçüncü Taraf Reklam Hizmetleri (Yandex Advertising Network)</h2>
+        <p>
+          Uygulamamızın ücretsiz olarak sunulabilmesi ve geliştirilmesinin sürdürülebilmesi amacıyla üçüncü taraf reklam sağlayıcısı olarak <strong>Yandex Advertising Network (YAN)</strong> kullanılmaktadır (Entegre Reklam Birimi: <code>R-M-20054329-1</code>).
+        </p>
+        <p>
+          Yandex Reklam Ağı, reklamların teknik olarak gösterilebilmesi, sıklık sınırlandırması (frequency capping) ve güvenlik/sahtecilik denetimi amacıyla sınırlı teknik bilgileri işleyebilir:
+        </p>
+        <ul>
+          <li>Anonimleştirilmiş cihaz tanımlayıcıları (Örn: Google Advertising ID - GAID)</li>
+          <li>Cihaz modeli, işletim sistemi sürümü ve ekran özellikleri</li>
+          <li>Reklam gösterimi ve tıklama istatistikleri</li>
+        </ul>
+        <p>
+          Yandex'in verileri nasıl işlediği hakkında daha fazla bilgi edinmek için lütfen <a href="https://yandex.com/legal/confidential/" target="_blank" rel="noopener noreferrer">Yandex Gizlilik Politikası</a>'nı inceleyiniz.
+        </p>
+        <div class="alert-box">
+          <p>
+            <strong>Kişiselleştirilmiş Reklamları Kapatma Hakkı:</strong> Android cihazınızdan <em>Ayarlar > Google > Reklamlar</em> menüsüne giderek reklam kimliğinizi sıfırlayabilir veya "Kişiselleştirilmiş reklamları devre dışı bırak" seçeneğini aktif edebilirsiniz.
+          </p>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h2>4. Uygulama İçi Satın Alma (Google Play In-App Billing)</h2>
+        <p>
+          Yasimov, reklamları tamamen devre dışı bırakmak ve her bölgede kesintisiz çevrimdışı oynama ayrıcalığına sahip olmak isteyen kullanıcılar için tek seferlik <strong>$5.00 (veya yerel para birimindeki dengi)</strong> tutarında "Reklamsız Deneyim (Ad-Free)" seçeneği sunar.
+        </p>
+        <ul>
+          <li>Tüm ödeme ve lisanslama işlemleri doğrudan <strong>Google LLC (Google Play Store)</strong> güvenli altyapısı üzerinden gerçekleştirilir.</li>
+          <li>Yasimov geliştiricileri, kredi kartı numaralarınız, son kullanma tarihleri veya güvenlik kodları (CVV) gibi hassas finansal verilerinize <u>kesinlikle erişemez</u> ve bunları sistemlerinde barındırmaz.</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h2>5. Açık Kaynak Satranç Verileri ve Lichess API</h2>
+        <p>
+          Uygulamada yer alan taktik bulmacalar ve tarihi büyükusta oyunları, kamuya açık (Creative Commons CC0 1.0 Universal - Kamu Malı) veri tabanlarından ve açık kaynaklı satranç motorlarından (Stockfish) derlenmiştir. Oyun hamleleri tarihsel/factual veriler olup hiçbir kullanıcı verisi bu servislerle paylaşılmaz.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <h2>6. Çocukların Gizliliği (COPPA & KVKK)</h2>
+        <p>
+          Yasimov, satrancı sevdirmek ve zihinsel gelişimi desteklemek amacıyla tasarlanmış aile dostu bir uygulamadır. Uygulama 13 yaşın (veya Avrupa Birliği ülkelerinde 16 yaşın) altındaki çocuklardan bilerek hiçbir kişisel veri toplamaz.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <h2>7. Yasal Haklarınız (KVKK ve GDPR)</h2>
+        <p>
+          6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve AB Genel Veri Koruma Tüzüğü (GDPR) kapsamında, kullanıcılarımız şu haklara sahiptir:
+        </p>
+        <ul>
+          <li><strong>Verileri Silme Hakkı:</strong> Cihazınızdaki uygulama verilerini temizleyerek tüm kullanım geçmişinizi saniyeler içinde silebilirsiniz.</li>
+          <li><strong>Takibi Sınırlandırma:</strong> Cihaz ayarlarınızdan reklam tanımlayıcısını sınırlandırabilirsiniz.</li>
+          <li><strong>Bilgi Edinme:</strong> Veri güvenliği veya politika hakkında dilediğiniz zaman bizimle iletişime geçebilirsiniz.</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h2>8. İletişim</h2>
+        <p>
+          Gizlilik Politikası hakkındaki tüm soru ve bildirimleriniz için bize ulaşabilirsiniz:
+        </p>
+        <p>
+          <strong>E-Posta:</strong> <a href="mailto:support@yasimov.app">support@yasimov.app</a> / <a href="mailto:yasimov.chess@gmail.com">yasimov.chess@gmail.com</a><br>
+          <strong>Uygulama:</strong> Yasimov: Chess & Gambit Master<br>
+          <strong>Geliştirici Ekip:</strong> Yasimov Development Team
+        </p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ENGLISH SECTION -->
+    <div id="english">
+      <div class="content-section">
+        <h2>1. Overview & Privacy Commitment (English)</h2>
+        <p>
+          <strong>Yasimov</strong> ("we", "our", or "the App") respects and protects your privacy. This Privacy Policy details how we handle information when you use our mobile application.
+        </p>
+        <div class="highlight-box">
+          <p>
+            <strong>Key Summary:</strong> Yasimov does <u>NOT collect, store, or transmit</u> any Personally Identifiable Information (PII) such as names, email addresses, phone numbers, or GPS location. The app operates on a local-first device architecture.
+          </p>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h2>2. On-Device Storage & Local Operation</h2>
+        <p>
+          All learning progress, completed tactics, master game review milestones, and user preferences (board theme, audio toggle, difficulty level) are stored strictly locally on your device via <code>localStorage</code>.
+        </p>
+        <p>
+          Uninstalling the application or clearing the application data in your Android device settings completely and irreversibly removes all stored records from your device.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <h2>3. Third-Party Advertising (Yandex Advertising Network)</h2>
+        <p>
+          To support free access and ongoing maintenance, we display ads provided by the <strong>Yandex Advertising Network (YAN)</strong> (Ad Unit: <code>R-M-20054329-1</code>).
+        </p>
+        <p>
+          Yandex Mobile Ads may process non-personal, technical identifiers such as:
+        </p>
+        <ul>
+          <li>Pseudonymous device identifiers (e.g., Google Advertising ID - GAID)</li>
+          <li>Operating system version, device model, and screen specifications</li>
+          <li>Aggregated ad performance metrics (impressions, clicks)</li>
+        </ul>
+        <p>
+          For more details, please review the <a href="https://yandex.com/legal/confidential/" target="_blank" rel="noopener noreferrer">Yandex Privacy Policy</a>. You can opt out of personalized ads at any time via <em>Android Settings > Google > Ads</em>.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <h2>4. In-App Purchase ($5.00 Ad-Free Experience)</h2>
+        <p>
+          Yasimov offers an optional one-time purchase of <strong>$5.00 flat</strong> to completely disable advertisements and unlock global offline gameplay.
+        </p>
+        <ul>
+          <li>All purchase transactions are handled securely by <strong>Google Play In-App Billing (Google LLC)</strong>.</li>
+          <li>We never receive, process, or store your credit card numbers, billing addresses, or banking information.</li>
+        </ul>
+      </div>
+
+      <div class="content-section">
+        <h2>5. Chess Data & Fair Use Notice</h2>
+        <p>
+          Tactical puzzles and historical master games are sourced from public domain databases (Creative Commons CC0 1.0 Universal) and open-source analysis engines (Stockfish). No personal player data is transmitted to external chess servers during gameplay.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <h2>6. Children's Privacy (COPPA & GDPR Compliance)</h2>
+        <p>
+          Yasimov is a family-friendly educational chess tool. We do not knowingly collect personal information from children under the age of 13 (or under 16 in the European Union).
+        </p>
+      </div>
+
+      <div class="content-section">
+        <h2>7. Contact Information</h2>
+        <p>
+          If you have questions, inquiries, or feedback regarding this Privacy Policy, please reach out to us:
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:support@yasimov.app">support@yasimov.app</a> / <a href="mailto:yasimov.chess@gmail.com">yasimov.chess@gmail.com</a><br>
+          <strong>Product:</strong> Yasimov: Chess & Gambit Master<br>
+          <strong>Developer Team:</strong> Yasimov Development Team
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 Yasimov. All rights reserved. Built with passion for the global chess community.</p>
+    </div>
+  </div>
+</body>
+</html>
